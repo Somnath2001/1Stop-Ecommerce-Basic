@@ -1,2 +1,2 @@
-# Ecommerce-website
-It is a E-commerce website having awesome frontend by 1stop.ai
+#project Link(Deploy) :- https://1stop-ecommerce-basic.netlify.app/
+

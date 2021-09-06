@@ -5,20 +5,14 @@ body{
 }
 
 /* navgation bar section */
-.nav{
-    background-color:white ;
-    z-index: 9; 
-    /* z-index used to avoid the overlapping over the navbar and fixed at top */
-    padding-left: 50px;
-    padding-right: 50px;
-    display: flex;
-    box-shadow: 0px 0px 65px 0px rgba(0,0,0,.16);
-}
 .nav_top{
+    z-index: 9;
+    box-shadow: 0px 1px 65px 0px rgba(49, 39, 29, 0.281);
     position: fixed;
     top:0;
     right: 0;
     left: 0;
+    color: #f3a30d;
 }
 .logo{
     float: left;
@@ -28,25 +22,12 @@ body{
     padding: 10px;
 }
 .nav_side{
-  float: right;
-  width: 40%;
-  margin-top: 30px;
+    margin-top: 10px;
 }
-.nav_side a{
-    text-decoration: none;
-    margin-right: 20px;
-    color: #000;
+.nav_side li a{
     font-weight: bold;
     font-family: cosmic,sans-serif;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-}
-.nav_side a:hover{
-   color: orange;
-   transition: all 0.5s ease;
+    font-size: 16px;    
 }
 /* main content */
 .main{
@@ -63,24 +44,24 @@ body{
     margin-right: 10%;
 }
 .main .main_content h2{
-    color: rgb(250, 246, 246);
+    color: rgb(236, 233, 233);
     font-size: 50px;
     font-family: cosmic,sans-serif;
     font-weight: bolder;
     text-align: center;
-    line-height: 25px;
+    line-height: 55px;
 }
 .main .main_content h2 span{
     font-size: 16px;
     opacity: 0.9;
     font-weight: 400;
     line-height: 15px;
-    color: rgb(245, 239, 236);
+    color: rgb(238, 236, 235);
 }
 .main .main_content .btn1{
     margin-top: 50px;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 70px;
     
 }
 .main .main_content .btn1 a{
@@ -100,6 +81,7 @@ body{
     border-bottom: 2px solid rgb(254, 255, 248);
     transition: 0.5s;
 }
+
 
 /* product main */
 .product{
@@ -373,4 +355,120 @@ footer span{
     float: right;
     margin-right: 20px;
 }
-
+.navbar-toggle{
+    background-color: #fa8b0c;
+    margin-top: 15px;
+    
+}
+/* Responsive for mobile */
+@media only screen and (max-width: 800px) {   
+    .nav_side{
+            margin-top: 10px;
+            text-align: center;
+        }
+    
+        .main{
+            background-image: url(./images/main3.jpg);
+            height: 70vh;
+            margin-top: 30px;
+            background-size:cover;
+        }    
+    .main .main_content{
+        padding-top: 12%;
+    }
+    .main .main_content h2{
+        font-size: 35px;
+        line-height: 40px;   
+    }
+    .main .main_content h2 span{
+        font-size: 14px;
+        opacity: 0.8;
+        font-weight: 500;
+        line-height: 2px;
+    }
+    .main .main_content .btn1{
+        text-align: center;
+        margin-top: 50px;
+        
+    }
+    
+    .product{
+        padding-bottom: 2px;
+    }
+    .product h2{
+       font-size: 25px;
+       padding: 8px;
+    }
+    .product .product_container{
+        display: grid;
+        margin-right: 40px;
+    }
+    .product .product_container .item{
+        width: 100%;
+        margin-bottom: 50px;  
+    }
+    
+    .keypoint{
+        padding: 4px;
+    }
+    .keypoint h2{
+       font-size: 25px;
+       padding: 5px;
+    }
+    .keypoint .key_container{
+        display: grid;
+    }
+    .keypoint .key_container .key_content{
+        width: 100%;
+        padding: 10px;
+        
+    }
+    
+    .keypoint .key_container .key_img{
+        width:100%;
+    }
+    .keypoint .key_container .key_img img{
+        width: 60%;
+    }
+    
+    .testi{
+        padding: 3px;
+        padding-bottom: 20px;
+    }
+    .testi h2{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .testi .testi_container{
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .testi .testi_container .item{
+        padding: 10px;
+    }
+    
+    .testi .testi_container .item .item_content p{
+        padding: 5px;
+    }
+     /* footer */
+    
+     footer .footer_logo{
+        margin-left: 8px;
+        padding-top: 10px;
+    }
+    footer .footer_logo img{
+        width:100px;
+    }
+    footer p{
+        margin-left: 8px;
+        padding-bottom: 50px;
+        text-align:center;
+        margin-top: 5px;
+        line-height: 30px;
+    }
+    footer span{
+        float: right;
+        margin-right: 35%;
+    }
+      }
+    
